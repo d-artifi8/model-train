@@ -3,7 +3,7 @@ pipeline {
     stages { // This 'stages' block encloses all individual 'stage' blocks
         stage('Checkout') {
             steps { // 'steps' block is required inside a stage
-                git branch: 'main', url: 'https://github.com/dai08/ml-pipeline.git'
+                git branch: 'main', url: 'https://github.com/d-artifi8/model-train.git'
             }
         }
         stage('Install Dependencies') { // Corrected indentation and placed inside 'stages'
